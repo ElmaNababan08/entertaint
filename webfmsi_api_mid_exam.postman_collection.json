@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "b2ec0f54-b82e-416b-b8ab-398381505cc6",
+		"name": "webfmsi_api_mid_exam",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3140692"
+	},
+	"item": [
+		{
+			"name": "/api/playlist/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{webfmsi}}/api/playlist/3",
+					"host": [
+						"{{webfmsi}}"
+					],
+					"path": [
+						"api",
+						"playlist",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/playlist/:group_id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "play_name",
+							"value": "play_name",
+							"type": "text"
+						},
+						{
+							"key": "play_url",
+							"value": "play_url",
+							"type": "text"
+						},
+						{
+							"key": "play_thumbnail",
+							"value": "play_thumbnail",
+							"type": "text"
+						},
+						{
+							"key": "play_genre",
+							"value": "education",
+							"type": "text"
+						},
+						{
+							"key": "play_description",
+							"value": "play_description",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{webfmsi}}/api/playlist/3",
+					"host": [
+						"{{webfmsi}}"
+					],
+					"path": [
+						"api",
+						"playlist",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/playlist/update/:id_play",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "play_name",
+							"value": "play_nametest",
+							"type": "text"
+						},
+						{
+							"key": "play_url",
+							"value": "play_urltest",
+							"type": "text"
+						},
+						{
+							"key": "play_thumbnail",
+							"value": "play_thumbnailtest",
+							"type": "text"
+						},
+						{
+							"key": "play_genre",
+							"value": "movie",
+							"type": "text"
+						},
+						{
+							"key": "play_description",
+							"value": "play_descriptiontest",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{webfmsi}}/api/playlist/update/4",
+					"host": [
+						"{{webfmsi}}"
+					],
+					"path": [
+						"api",
+						"playlist",
+						"update",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/playlist/:id_play",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{webfmsi}}/api/playlist/4",
+					"host": [
+						"{{webfmsi}}"
+					],
+					"path": [
+						"api",
+						"playlist",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "webfmsi",
+			"value": "https://webfmsi.singapoly.com"
+		},
+		{
+			"key": "lumen_local",
+			"value": "http://127.0.0.1:8000"
+		}
+	]
+}
